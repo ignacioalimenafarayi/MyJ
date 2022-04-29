@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myjdespensa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,45 +16,68 @@
         <a href=""><img src="./images/logopagina.jpeg" alt=""></a>
         <nav>
             <ul>
-                <li class="home"><a href="index.html">inicio</a></li>
-                <li class="home"><a href="page/productos.html">productos</a></li>
-                <li class="home"><a href="page/menupromos.html">menu/promos</a></li>
-                <li class="home"><a href="page/nosotros.html">nosotros</a></li>
-                <li class="home"><a href="page/contacto.html">contacto</a></li>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="page/productos.html">productos</a></li>
+                <li><a href="page/menupromos.html">menu/promos</a></li>
+                <li><a href="page/nosotros.html">nosotros</a></li>
+                <li><a href="page/contacto.html">contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="HeroSection">
-                <img src="./images/kioscomyj.jpeg" alt="">
-                <div class="Bienvenidos">
-                    <h2>¡BIENVENIDOS A MYJ!</h2>
-                    <p>Te esperamos en maipu y pellegrini para que veas todas nuestras ofertas y productos disponibles!</p>
+        <section class="hero">
+            <h1>BIENVENIDOS A MyJ DESPENSA</h1>
+            <P>Acá podes encontrar todo lo que necesitas con la mejor atención y al mejor precio.</P>
+            <a href="./page/productos.html">Mira nuestros productos acá</a>
+        </section>
+        <section class="sectionIndex1">
+            <div>
+                <img src="./images/blockazo.jpeg" alt="">
+                <div class="indexBlock">
+                    <h3>¡Pasa por Maipu y Pellegrini a ver todo lo que tenemos!</h3>
                 </div>
         </section>
-        <section class="Ofertas">
-            <h1>OFERTAS</h1>
+        <section class="sectionIndex2">
             <div>
-                <div>
-                    <img src="./images/latitacoca.webp" alt="">
-                    <h2>Lata Coca Cola</h2>
-                    <p>$80</p>
+                <img src="./images/kioscomyj.jpeg" alt="">
+                <div class="index1">
+                    <h3>¡Pasa a buscar los alimentos para tu dia!</h3>
                 </div>
-                <div>
-                    <img src="./images/gallevariedad.webp" alt="">
-                    <h2>Galletitas variedad</h2>
-                    <p>$140</p>
+        </section>
+        <section class="ofertas">
+            <h2>OFERTAS</h2>
+            <div class="card-group">
+                <div class="card">
+                    <img src="./images/latitacoca.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Latita Coca Cola</h5>
+                        <p class="card-text">$80</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
                 </div>
-                <div>
-                    <img src="./images/vodkasmirnoff.png" alt="">
-                    <h2>Vodka Smirnoff</h2>
-                    <p>$800</p>
+                <div class="card">
+                    <img src="./images/gallevariedad2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Galletitas "Variedad"</h5>
+                        <p class="card-text">$180</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/ginmerle.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gin "Merle"</h5>
+                        <p class="card-text">$650</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
                 </div>
             </div>
-        </section>
+
+
+
     </main>
     <footer class="footer">
-        <a href="./index.html"><img class="ImgFooter" src="./images/logopagina.jpeg" alt="logo"></a>
+        <a href="./index.html"><img class="imgFooter" src="./images/logopagina.jpeg" alt="logo"></a>
         <ul>
             <li><a href="ayuda">ayuda</a></li>
             <li><a href="reclamos">reclamos</a></li>
@@ -66,7 +91,9 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
