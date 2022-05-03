@@ -121,9 +121,18 @@ h3{
 h2 {
     text-align: center;
 }
+.ofertas{
+    animation-name: ofertas;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;  
+}
 
+@keyframes ofertas { 0%{
+    color: #2d610c;
+}
 
-
+}
 
 
 
@@ -138,6 +147,9 @@ h2 {
 
 
 /*-------footer------*/
+
+
+
 .footer {
     background-color: #3E7C17;
     display: flex;
