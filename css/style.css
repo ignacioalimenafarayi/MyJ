@@ -1,0 +1,183 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+/*------header/nav -----*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3E7C17; }
+  .header img {
+    width: 100;
+    height: 75px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply; }
+  .header nav ul {
+    display: flex;
+    list-style: none; }
+    .header nav ul li {
+      margin: 5px; }
+      .header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #6ECB63;
+        font-family: 'Libre Baskerville', serif; }
+
+/*-------footer----*/
+footer {
+  background-color: #2d610c; }
+  footer .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .footer p {
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px #6ECB63;
+      font-family: 'Libre Baskerville', serif;
+      text-align: center;
+      text-transform: uppercase; }
+    footer .footer a .imgFooter {
+      width: 100px;
+      height: 100px;
+      filter: brightness(1.1);
+      mix-blend-mode: multiply; }
+    footer .footer ul {
+      list-style: none; }
+      footer .footer ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #6ECB63;
+        font-family: 'Libre Baskerville', serif; }
+  footer div a img {
+    width: 50px;
+    height: 50px; }
+
+/*-------mainindex-----*/
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(black, rgba(0, 0, 0, 0.239)), url(../images/golosinas.jpeg); }
+
+h1 {
+  font-size: 60px;
+  font-weight: bold; }
+
+p {
+  font-size: 30px; }
+
+a {
+  background-color: #7bb757;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 30px; }
+
+.sectionIndex1 div {
+  display: flex;
+  align-items: center; }
+  .sectionIndex1 div img {
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 15px; }
+    .sectionIndex1 div img .indexBlock {
+      margin: 40px; }
+      .sectionIndex1 div img .indexBlock h3 {
+        text-align: center; }
+
+.sectionIndex1 .sectionIndex2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .sectionIndex1 .sectionIndex2 img {
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 15px; }
+  .sectionIndex1 .sectionIndex2 .index1 {
+    margin: 130px; }
+  .sectionIndex1 .sectionIndex2 .ofertas {
+    animation-name: ofertas;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s; }
+
+@keyframes ofertas {
+  0% {
+    color: #2d610c; } }
+    .sectionIndex1 .sectionIndex2 .ofertas h2 {
+      text-align: center; }
+    .sectionIndex1 .sectionIndex2 .ofertas div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+      .sectionIndex1 .sectionIndex2 .ofertas div div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 15px;
+        box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+        .sectionIndex1 .sectionIndex2 .ofertas div div img {
+          width: 200px;
+          height: 200px; }
+
+/*----maincontacto-----*/
+.mapa {
+  align-items: center; }
+  .mapa .mapa h2 {
+    text-align: center; }
+
+/*----main nosotros-----*/
+.nosotros h1 {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  text-decoration: underline;
+  color: black; }
+
+.nosotros div p {
+  margin: 2px;
+  padding: 2px;
+  font-family: 'Quicksand', sans-serif; }
+
+/*----mainproductos-----*/
+.productos h2 {
+  text-align: center;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.productos div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .productos div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+    .productos div div img {
+      width: 200px;
+      height: 200px; }
