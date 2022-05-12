@@ -1,0 +1,20 @@
+/*---extension----*/
+.h2Mapa{
+    text-align: center;
+}
+.productos h2{
+    @extend .h2Mapa;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*----mixin----*/
+@mixin primero ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+img{
+    border-radius: 15px;
+    @include primero (200px, 150px)
+}

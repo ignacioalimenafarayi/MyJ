@@ -181,3 +181,17 @@ a {
     .productos div div img {
       width: 200px;
       height: 200px; }
+
+/*---extension----*/
+.h2Mapa, .productos h2 {
+  text-align: center; }
+
+.productos h2 {
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+/*----mixin----*/
+img {
+  border-radius: 15px;
+  width: 200px;
+  height: 150px; }
