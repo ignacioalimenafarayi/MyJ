@@ -55,7 +55,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(black, rgba(0, 0, 0, 0.239)), url(../images/golosinas.jpeg)
+    background: linear-gradient(black, rgba(0, 0, 0, 0.239)), url(../images/golosinas.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero {
@@ -84,49 +88,33 @@
     margin-top: 30px;
 }
 
-h3 {
-    text-align: center;
 
-}
 
-.sectionIndex1 div {
+.sectionIndex1{
     display: flex;
     align-items: center;
-
-}
-
-.sectionIndex1 div .indexBlock {
     margin: 40px;
-
 }
-
-
-.sectionIndex1 div img {
+.sectionIndex1 img {
     width: 500px;
     height: 500px;
     margin: 10px;
     border-radius: 15px;
 }
 
-.sectionIndex2 div {
+.sectionIndex2  {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    margin: 40px;
 }
-
-.sectionIndex2 div .index1 {
-    margin: 130px;
-}
-
-.sectionIndex2 div img {
+.sectionIndex2  img {
     width: 500px;
     height: 500px;
     margin: 10px;
     border-radius: 15px;
 }
-h2 {
-    text-align: center;
-}
+
 
 .ofertas>div {
     display: flex;
@@ -144,10 +132,7 @@ h2 {
     box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.ofertas div div img {
-    width: 200px;
-    height: 200px;
-}
+
 
 .ofertas {
     animation-name: ofertas;
@@ -170,13 +155,11 @@ h2 {
 
 /*-------footer------*/
 
-footer {
-    background-color: #2d610c;
-}
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #2d610c;
 }
 .footer ul {
     list-style: none;
@@ -233,10 +216,11 @@ footer p {
 .mapa{
     align-items: center;
 }
-.h2Mapa{
+h2{
     text-align: center;
     
 }
+
 
 
 /*----main PRODUCTOS---------*/
@@ -273,6 +257,32 @@ nav a:hover {
 }
 
 /*--------menupromos--------*/
+.combos h2{
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.combos>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.combos div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.combos div div img {
+    width: 300px;
+    height: 300px;
+}
+
 
 @media screen and (max-width: 894px) {
     .hero h1 {
@@ -293,6 +303,18 @@ nav a:hover {
     }
 
     .header nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 652px) {
+    .sectionIndex1{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 652px) {
+    .sectionIndex2{
         flex-direction: column;
         justify-content: center;
     }

@@ -1,27 +1,25 @@
 
 /*-------footer----*/
 
-footer{
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #2d610c;
-    .footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        p{
-            color: white;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 1px #6ECB63;
-            font-family: 'Libre Baskerville', serif;
-            text-align: center;
-            text-transform: uppercase;
-        }
+    p{
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #6ECB63;
+        font-family: 'Libre Baskerville', serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    div{
         a{
-            .imgFooter{
-                width: 100px;
-                height: 100px;
-                filter: brightness(1.1);
-                mix-blend-mode: multiply;
+            img{
+                width: 50px;
+                height: 50px;
             }
         }
         ul{
@@ -38,12 +36,12 @@ footer{
             }
         }
     }
-        div{
-            a{
-                img{
-                    width: 50px;
-                    height: 50px;
-                }
+    div{
+        a{
+            img{
+                width: 50px;
+                height: 50px;
             }
         }
+    }
 }
