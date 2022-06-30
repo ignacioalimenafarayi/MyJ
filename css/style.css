@@ -27,6 +27,11 @@
         text-shadow: 1px 1px 1px #6ECB63;
         font-family: 'Libre Baskerville', serif; }
 
+@media screen and (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    justify-content: center; } }
+
 /*-------footer----*/
 .footer {
   display: flex;
