@@ -187,6 +187,11 @@ footer p {
     justify-content: center; } }
 
 /*----mainproductos-----*/
+#formulario{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .productos {
   margin: 60px;
   margin-top: 6%; }

@@ -1,3 +1,15 @@
+
+
+let miFormulario = document.getElementById("formulario");
+miFormulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e) {
+    e.preventDefault();
+    let formulario = e.target;
+    console.log(formulario.children [0].value);
+    console.log(formulario.children [1].value)
+}
+
 class producto {
     constructor(id, nombre, precio, categoria) {
         this.id = id;
@@ -39,7 +51,7 @@ while (categoria != "esc" && categoria != null) {
     let cartel = "";
     for (let i = 0; i < filtradoCategoria.length; i++) {
             cartel+=
-            " id: "
+        " id: "
             + filtradoCategoria[i].id +
             " precio: " +
             filtradoCategoria[i].precio +
@@ -50,7 +62,7 @@ while (categoria != "esc" && categoria != null) {
         }
         let idSeleccionado = parseInt(
             prompt(
-                    "seleccione id del producto que quiere comprar \n" + cartel
+                    "seleccione id del producto que quiere comprar. Luego escribe esc y llena el formulario con tu nombre y email \n" + cartel
                     )
         );
         let carro = filtradoCategoria.find(
