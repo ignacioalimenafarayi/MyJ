@@ -1,3 +1,5 @@
+Swal.fire('BIENVENIDO A MyJ!')
+
 let productos = [
     {id: 101, nombre: "kitkat", precio: 120},
     {id: 102, nombre: "cardbury", precio: 325},
@@ -71,7 +73,6 @@ function listadoProductosEnCarro() {
 }
 
 //-----TERMINA CARRO---///
-
 //let miFormulario = document.getElementById("formulario");
 //miFormulario.addEventListener("submit", validarFormulario);
 
