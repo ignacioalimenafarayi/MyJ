@@ -1,5 +1,32 @@
 Swal.fire('BIENVENIDO A MyJ!')
 
+function clickEnProductos(id){
+    alert ("se selecciono el producto " + id)
+}
+
+fetch("/data.json")
+.then((resinicial)=>resinicial.json())
+.then((res)=>{
+
+    const miArray= res;
+    
+    let htmlAux=``;
+    for(let i=0; i<miArray.length; i++){
+        htmlAux= htmlAux+ 
+                            `<div onclick="clickEnProductos (${miArray[i].id})">
+                            <strong>${miArray[i].name}</strong>
+                            <p style="color:green">${miArray[i].precio}</p>
+                            <img src="../img/zapatilla.jpg" alt="zapatilla">
+                            
+                            </div>
+                            <br/>`
+    }
+    document.getElementById("listadoDePrecios").innerHTML= htmlAux;
+})
+.catch((e)=>{
+    console.log(e)
+}
+
 let productos = [
     {id: 101, nombre: "kitkat", precio: 120},
     {id: 102, nombre: "cardbury", precio: 325},
@@ -69,8 +96,7 @@ function listadoProductosEnCarro() {
                         <p onclick= "BorrarDelCarro(${i})" style = "cursor: pointer;"><button>BORRAR DEL CARRO</button></p>
                     </div> `;
     }
-    document.getElementById('div-carrito').innerHTML = aux;
-}
+    document.getElementById('div-carrito').innerHTML = aux;}
 
 //-----TERMINA CARRO---///
 //let miFormulario = document.getElementById("formulario");
